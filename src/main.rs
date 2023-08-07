@@ -1,11 +1,8 @@
 use std::{time,thread};
 
 fn main() {
-    let (mut A,mut B)=(0f32,0f32);
+    let (mut A,mut B,mut z,mut b)=(0f32,0f32,[0.;1760],[' ';1760]);
     let (i,j):(f32,f32);
-    let k:i32;
-    let mut z:[f32;1760]=[0.;1760];
-    let mut b:[char;1760]=[' ';1760];
     print!("\x1B[2J\x1B[1;1H");
     loop {
         b[0..1760].fill(32 as char);
